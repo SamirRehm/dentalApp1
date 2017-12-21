@@ -44,7 +44,25 @@ class Home: UIViewController {
         displayWhitehorseWeather()
         setUpAnimatedControls()
         setUpButtons()
-        //animateView()
+        
+        let query = PFUser.query()
+        //query?.whereKey("firstname", notEqualTo: "")
+        query?.selectKeys(["firstname"])
+        query?.findObjectsInBackground {
+            (objects:[PFObject]?, error:Error?) -> Void in
+            if error == nil {
+                // Do something with the found objects
+                if let objects = objects {
+                    for object in objects {
+                        print(object["firstname"])
+                    }
+                }
+            } else {
+                // Log details of the failure
+                print("Error")
+            }
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
