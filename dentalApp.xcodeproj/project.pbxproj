@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F90380041FDD030B00247CCE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90380031FDD030B00247CCE /* Home.swift */; };
+		F903800A1FDD0D0500247CCE /* DayWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90380091FDD0D0500247CCE /* DayWeatherModel.swift */; };
+		F903800C1FDD0DBE00247CCE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903800B1FDD0DBE00247CCE /* Data.swift */; };
 		F919613B1FDBCA66003DFAB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F919613A1FDBCA66003DFAB6 /* AppDelegate.swift */; };
 		F919613D1FDBCA66003DFAB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F919613C1FDBCA66003DFAB6 /* ViewController.swift */; };
 		F91961401FDBCA66003DFAB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F919613E1FDBCA66003DFAB6 /* Main.storyboard */; };
@@ -14,6 +17,19 @@
 		F91961451FDBCA66003DFAB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91961431FDBCA66003DFAB6 /* LaunchScreen.storyboard */; };
 		F91961501FDBCA66003DFAB6 /* dentalAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F919614F1FDBCA66003DFAB6 /* dentalAppTests.swift */; };
 		F919615B1FDBCA66003DFAB6 /* dentalAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F919615A1FDBCA66003DFAB6 /* dentalAppUITests.swift */; };
+		F919616A1FDBD59F003DFAB6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91961691FDBD59F003DFAB6 /* AudioToolbox.framework */; };
+		F919616C1FDBD5A4003DFAB6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F919616B1FDBD5A4003DFAB6 /* CFNetwork.framework */; };
+		F919616E1FDBD5C1003DFAB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F919616D1FDBD5C1003DFAB6 /* CoreGraphics.framework */; };
+		F91961701FDBD5C8003DFAB6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F919616F1FDBD5C8003DFAB6 /* CoreLocation.framework */; };
+		F91961721FDBD5D4003DFAB6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91961711FDBD5D4003DFAB6 /* QuartzCore.framework */; };
+		F91961741FDBD5DC003DFAB6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91961731FDBD5DC003DFAB6 /* Security.framework */; };
+		F91961761FDBD5E2003DFAB6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91961751FDBD5E2003DFAB6 /* StoreKit.framework */; };
+		F91961781FDBD5EA003DFAB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91961771FDBD5EA003DFAB6 /* SystemConfiguration.framework */; };
+		F919617A1FDBD5F7003DFAB6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F91961791FDBD5F7003DFAB6 /* libz.tbd */; };
+		F919617C1FDBD602003DFAB6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F919617B1FDBD601003DFAB6 /* libsqlite3.tbd */; };
+		F919617F1FDBD659003DFAB6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F919617D1FDBD658003DFAB6 /* Bolts.framework */; };
+		F91961801FDBD659003DFAB6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F919617E1FDBD659003DFAB6 /* Parse.framework */; };
+		F91961821FDBDB89003DFAB6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91961811FDBDB89003DFAB6 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F90380031FDD030B00247CCE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F90380091FDD0D0500247CCE /* DayWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherModel.swift; sourceTree = "<group>"; };
+		F903800B1FDD0DBE00247CCE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		F91961371FDBCA66003DFAB6 /* dentalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dentalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F919613A1FDBCA66003DFAB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F919613C1FDBCA66003DFAB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +66,19 @@
 		F91961561FDBCA66003DFAB6 /* dentalAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dentalAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F919615A1FDBCA66003DFAB6 /* dentalAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dentalAppUITests.swift; sourceTree = "<group>"; };
 		F919615C1FDBCA66003DFAB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F91961691FDBD59F003DFAB6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F919616B1FDBD5A4003DFAB6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F919616D1FDBD5C1003DFAB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F919616F1FDBD5C8003DFAB6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F91961711FDBD5D4003DFAB6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F91961731FDBD5DC003DFAB6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F91961751FDBD5E2003DFAB6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F91961771FDBD5EA003DFAB6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F91961791FDBD5F7003DFAB6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F919617B1FDBD601003DFAB6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F919617D1FDBD658003DFAB6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = SOURCE_ROOT; };
+		F919617E1FDBD659003DFAB6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = SOURCE_ROOT; };
+		F91961811FDBDB89003DFAB6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F919617C1FDBD602003DFAB6 /* libsqlite3.tbd in Frameworks */,
+				F919617A1FDBD5F7003DFAB6 /* libz.tbd in Frameworks */,
+				F91961781FDBD5EA003DFAB6 /* SystemConfiguration.framework in Frameworks */,
+				F91961761FDBD5E2003DFAB6 /* StoreKit.framework in Frameworks */,
+				F91961741FDBD5DC003DFAB6 /* Security.framework in Frameworks */,
+				F91961721FDBD5D4003DFAB6 /* QuartzCore.framework in Frameworks */,
+				F91961701FDBD5C8003DFAB6 /* CoreLocation.framework in Frameworks */,
+				F919616E1FDBD5C1003DFAB6 /* CoreGraphics.framework in Frameworks */,
+				F919617F1FDBD659003DFAB6 /* Bolts.framework in Frameworks */,
+				F919616C1FDBD5A4003DFAB6 /* CFNetwork.framework in Frameworks */,
+				F91961801FDBD659003DFAB6 /* Parse.framework in Frameworks */,
+				F919616A1FDBD59F003DFAB6 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +125,7 @@
 				F919614E1FDBCA66003DFAB6 /* dentalAppTests */,
 				F91961591FDBCA66003DFAB6 /* dentalAppUITests */,
 				F91961381FDBCA66003DFAB6 /* Products */,
+				F91961681FDBD59F003DFAB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +145,13 @@
 				F919613A1FDBCA66003DFAB6 /* AppDelegate.swift */,
 				F919613C1FDBCA66003DFAB6 /* ViewController.swift */,
 				F919613E1FDBCA66003DFAB6 /* Main.storyboard */,
+				F903800B1FDD0DBE00247CCE /* Data.swift */,
+				F90380091FDD0D0500247CCE /* DayWeatherModel.swift */,
+				F91961811FDBDB89003DFAB6 /* SignUpViewController.swift */,
+				F90380031FDD030B00247CCE /* Home.swift */,
 				F91961411FDBCA66003DFAB6 /* Assets.xcassets */,
+				F919617D1FDBD658003DFAB6 /* Bolts.framework */,
+				F919617E1FDBD659003DFAB6 /* Parse.framework */,
 				F91961431FDBCA66003DFAB6 /* LaunchScreen.storyboard */,
 				F91961461FDBCA66003DFAB6 /* Info.plist */,
 			);
@@ -123,6 +174,23 @@
 				F919615C1FDBCA66003DFAB6 /* Info.plist */,
 			);
 			path = dentalAppUITests;
+			sourceTree = "<group>";
+		};
+		F91961681FDBD59F003DFAB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F919617B1FDBD601003DFAB6 /* libsqlite3.tbd */,
+				F91961791FDBD5F7003DFAB6 /* libz.tbd */,
+				F91961771FDBD5EA003DFAB6 /* SystemConfiguration.framework */,
+				F91961751FDBD5E2003DFAB6 /* StoreKit.framework */,
+				F91961731FDBD5DC003DFAB6 /* Security.framework */,
+				F91961711FDBD5D4003DFAB6 /* QuartzCore.framework */,
+				F919616F1FDBD5C8003DFAB6 /* CoreLocation.framework */,
+				F919616D1FDBD5C1003DFAB6 /* CoreGraphics.framework */,
+				F919616B1FDBD5A4003DFAB6 /* CFNetwork.framework */,
+				F91961691FDBD59F003DFAB6 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +327,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F903800C1FDD0DBE00247CCE /* Data.swift in Sources */,
+				F91961821FDBDB89003DFAB6 /* SignUpViewController.swift in Sources */,
 				F919613D1FDBCA66003DFAB6 /* ViewController.swift in Sources */,
+				F90380041FDD030B00247CCE /* Home.swift in Sources */,
+				F903800A1FDD0D0500247CCE /* DayWeatherModel.swift in Sources */,
 				F919613B1FDBCA66003DFAB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +499,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QMX3CTGR3E;
+				DEVELOPMENT_TEAM = PY9977T7R3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = dentalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = triniti.dentalApp;
@@ -442,7 +518,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QMX3CTGR3E;
+				DEVELOPMENT_TEAM = PY9977T7R3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = dentalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = triniti.dentalApp;
