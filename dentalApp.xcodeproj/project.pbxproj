@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		009CDDAB1FEDEFD3005C3C31 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009CDDA91FEDEFD2005C3C31 /* Bolts.framework */; };
+		009CDDAC1FEDEFD3005C3C31 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009CDDAA1FEDEFD3005C3C31 /* Parse.framework */; };
+		00CD47D11FEDE1F900308B90 /* Dentist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD47D01FEDE1F900308B90 /* Dentist.swift */; };
+		00CD47D21FEDE1F900308B90 /* Dentist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD47D01FEDE1F900308B90 /* Dentist.swift */; };
+		00CD47D31FEDE1F900308B90 /* Dentist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD47D01FEDE1F900308B90 /* Dentist.swift */; };
+		00CD47D51FEDE22E00308B90 /* Dentist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CD47D41FEDE22E00308B90 /* Dentist.storyboard */; };
+		00CD47D61FEDE22E00308B90 /* Dentist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CD47D41FEDE22E00308B90 /* Dentist.storyboard */; };
+		00CD47D71FEDE22E00308B90 /* Dentist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CD47D41FEDE22E00308B90 /* Dentist.storyboard */; };
 		F90380041FDD030B00247CCE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90380031FDD030B00247CCE /* Home.swift */; };
 		F903800A1FDD0D0500247CCE /* DayWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90380091FDD0D0500247CCE /* DayWeatherModel.swift */; };
 		F903800C1FDD0DBE00247CCE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903800B1FDD0DBE00247CCE /* Data.swift */; };
@@ -27,8 +35,6 @@
 		F91961781FDBD5EA003DFAB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91961771FDBD5EA003DFAB6 /* SystemConfiguration.framework */; };
 		F919617A1FDBD5F7003DFAB6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F91961791FDBD5F7003DFAB6 /* libz.tbd */; };
 		F919617C1FDBD602003DFAB6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F919617B1FDBD601003DFAB6 /* libsqlite3.tbd */; };
-		F919617F1FDBD659003DFAB6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F919617D1FDBD658003DFAB6 /* Bolts.framework */; };
-		F91961801FDBD659003DFAB6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F919617E1FDBD659003DFAB6 /* Parse.framework */; };
 		F91961821FDBDB89003DFAB6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91961811FDBDB89003DFAB6 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		009CDDA91FEDEFD2005C3C31 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		009CDDAA1FEDEFD3005C3C31 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		00CD47B81FEDDF4200308B90 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../Bolts.framework; sourceTree = "<group>"; };
+		00CD47B91FEDDF4200308B90 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
+		00CD47D01FEDE1F900308B90 /* Dentist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dentist.swift; sourceTree = "<group>"; };
+		00CD47D41FEDE22E00308B90 /* Dentist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dentist.storyboard; sourceTree = "<group>"; };
 		F90380031FDD030B00247CCE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		F90380091FDD0D0500247CCE /* DayWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherModel.swift; sourceTree = "<group>"; };
 		F903800B1FDD0DBE00247CCE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -76,8 +88,6 @@
 		F91961771FDBD5EA003DFAB6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F91961791FDBD5F7003DFAB6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F919617B1FDBD601003DFAB6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		F919617D1FDBD658003DFAB6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = SOURCE_ROOT; };
-		F919617E1FDBD659003DFAB6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = SOURCE_ROOT; };
 		F91961811FDBDB89003DFAB6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,9 +104,9 @@
 				F91961721FDBD5D4003DFAB6 /* QuartzCore.framework in Frameworks */,
 				F91961701FDBD5C8003DFAB6 /* CoreLocation.framework in Frameworks */,
 				F919616E1FDBD5C1003DFAB6 /* CoreGraphics.framework in Frameworks */,
-				F919617F1FDBD659003DFAB6 /* Bolts.framework in Frameworks */,
+				009CDDAB1FEDEFD3005C3C31 /* Bolts.framework in Frameworks */,
 				F919616C1FDBD5A4003DFAB6 /* CFNetwork.framework in Frameworks */,
-				F91961801FDBD659003DFAB6 /* Parse.framework in Frameworks */,
+				009CDDAC1FEDEFD3005C3C31 /* Parse.framework in Frameworks */,
 				F919616A1FDBD59F003DFAB6 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +128,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00CD47D81FEDEF0C00308B90 /* SetUp */ = {
+			isa = PBXGroup;
+			children = (
+				F919613A1FDBCA66003DFAB6 /* AppDelegate.swift */,
+				F903800B1FDD0DBE00247CCE /* Data.swift */,
+				F90380091FDD0D0500247CCE /* DayWeatherModel.swift */,
+			);
+			path = SetUp;
+			sourceTree = "<group>";
+		};
 		F919612E1FDBCA66003DFAB6 = {
 			isa = PBXGroup;
 			children = (
@@ -142,17 +162,17 @@
 		F91961391FDBCA66003DFAB6 /* dentalApp */ = {
 			isa = PBXGroup;
 			children = (
-				F919613A1FDBCA66003DFAB6 /* AppDelegate.swift */,
-				F919613C1FDBCA66003DFAB6 /* ViewController.swift */,
+				00CD47D81FEDEF0C00308B90 /* SetUp */,
 				F919613E1FDBCA66003DFAB6 /* Main.storyboard */,
-				F903800B1FDD0DBE00247CCE /* Data.swift */,
-				F90380091FDD0D0500247CCE /* DayWeatherModel.swift */,
+				F919613C1FDBCA66003DFAB6 /* ViewController.swift */,
 				F91961811FDBDB89003DFAB6 /* SignUpViewController.swift */,
 				F90380031FDD030B00247CCE /* Home.swift */,
+				00CD47D41FEDE22E00308B90 /* Dentist.storyboard */,
+				00CD47D01FEDE1F900308B90 /* Dentist.swift */,
 				F91961411FDBCA66003DFAB6 /* Assets.xcassets */,
-				F919617D1FDBD658003DFAB6 /* Bolts.framework */,
-				F919617E1FDBD659003DFAB6 /* Parse.framework */,
 				F91961431FDBCA66003DFAB6 /* LaunchScreen.storyboard */,
+				009CDDA91FEDEFD2005C3C31 /* Bolts.framework */,
+				009CDDAA1FEDEFD3005C3C31 /* Parse.framework */,
 				F91961461FDBCA66003DFAB6 /* Info.plist */,
 			);
 			path = dentalApp;
@@ -179,6 +199,8 @@
 		F91961681FDBD59F003DFAB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00CD47B81FEDDF4200308B90 /* Bolts.framework */,
+				00CD47B91FEDDF4200308B90 /* Parse.framework */,
 				F919617B1FDBD601003DFAB6 /* libsqlite3.tbd */,
 				F91961791FDBD5F7003DFAB6 /* libz.tbd */,
 				F91961771FDBD5EA003DFAB6 /* SystemConfiguration.framework */,
@@ -303,6 +325,7 @@
 				F91961451FDBCA66003DFAB6 /* LaunchScreen.storyboard in Resources */,
 				F91961421FDBCA66003DFAB6 /* Assets.xcassets in Resources */,
 				F91961401FDBCA66003DFAB6 /* Main.storyboard in Resources */,
+				00CD47D51FEDE22E00308B90 /* Dentist.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CD47D61FEDE22E00308B90 /* Dentist.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CD47D71FEDE22E00308B90 /* Dentist.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +358,7 @@
 				F90380041FDD030B00247CCE /* Home.swift in Sources */,
 				F903800A1FDD0D0500247CCE /* DayWeatherModel.swift in Sources */,
 				F919613B1FDBCA66003DFAB6 /* AppDelegate.swift in Sources */,
+				00CD47D11FEDE1F900308B90 /* Dentist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91961501FDBCA66003DFAB6 /* dentalAppTests.swift in Sources */,
+				00CD47D21FEDE1F900308B90 /* Dentist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F919615B1FDBCA66003DFAB6 /* dentalAppUITests.swift in Sources */,
+				00CD47D31FEDE1F900308B90 /* Dentist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +531,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/dentalApp",
 				);
 				INFOPLIST_FILE = dentalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -522,6 +551,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/dentalApp",
 				);
 				INFOPLIST_FILE = dentalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -539,6 +569,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QMX3CTGR3E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dentalApp",
+				);
 				INFOPLIST_FILE = dentalAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = triniti.dentalAppTests;
@@ -556,6 +590,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QMX3CTGR3E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dentalApp",
+				);
 				INFOPLIST_FILE = dentalAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = triniti.dentalAppTests;
@@ -572,6 +610,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QMX3CTGR3E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dentalApp",
+				);
 				INFOPLIST_FILE = dentalAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = triniti.dentalAppUITests;
@@ -588,6 +630,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QMX3CTGR3E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dentalApp",
+				);
 				INFOPLIST_FILE = dentalAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = triniti.dentalAppUITests;

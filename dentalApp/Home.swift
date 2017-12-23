@@ -10,6 +10,7 @@ import UIKit
 import Parse
 import Foundation
 
+
 class Home: UIViewController {
 
     @IBOutlet weak var background: UIImageView!
@@ -44,7 +45,11 @@ class Home: UIViewController {
         displayWhitehorseWeather()
         setUpAnimatedControls()
         setUpButtons()
+        showQuery()
         
+    }
+    
+    func showQuery() {
         let query = PFUser.query()
         //query?.whereKey("firstname", notEqualTo: "")
         query?.selectKeys(["firstname"])
@@ -62,7 +67,6 @@ class Home: UIViewController {
                 print("Error")
             }
         }
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -201,9 +205,11 @@ class Home: UIViewController {
     
  
     @IBAction func logout(_ sender: Any) {
+        let home = Home()
         PFUser.logOut()
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "login")
         self.present(vc!, animated: true, completion: nil)
+        home.dismiss(animated: true, completion: nil)
     }
     
 }

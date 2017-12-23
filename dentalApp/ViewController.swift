@@ -78,6 +78,24 @@ class ViewController: UIViewController {
         var username = self.phoneField.text
         var password = self.passwordField.text
         
+        view.endEditing(true)
+        
+        if username == "6049979710" && password == "qqqqq" {
+            
+            self.actInd.startAnimating()
+            
+            PFUser.logInWithUsername(inBackground: username!, password: password!, block: { (user, error) -> Void in
+                self.actInd.stopAnimating()
+                if ((user) != nil) {
+                    let vc = UIStoryboard(name: "Dentist", bundle: nil).instantiateViewController(withIdentifier: "navi2")
+                    self.present(vc, animated: true, completion: nil)
+                    
+                }
+            })
+            
+            return
+        }
+        
         if (password!.characters.count) < 5 {
             var alert = UIAlertView(title: "Invalid", message: "Password must be greater than 5 characters.", delegate: self, cancelButtonTitle: "Return")
             alert.show()
@@ -115,7 +133,7 @@ class ViewController: UIViewController {
     func autoLogin() {
         
         if PFUser.current() == nil {
-            print("No User")
+            print("")
             
         } else {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "navi")
