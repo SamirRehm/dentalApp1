@@ -137,7 +137,7 @@ class Dentist: UIViewController {
         if x != 1 {
             x = 1
             let user = PFUser.current()!
-            welcome.text = String("Welcome \(user["firstname"]!)!")
+            welcome.text = String("Welcome Dr. \(user["lastname"]!)!")
             self.welcome.alpha = 0.0
             self.welcomeView.alpha = 0.0
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.40) {
