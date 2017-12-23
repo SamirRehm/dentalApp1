@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00A8C0E01FEDF151007E9849 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A8C0DE1FEDF150007E9849 /* Parse.framework */; };
-		00A8C0E11FEDF151007E9849 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A8C0DE1FEDF150007E9849 /* Parse.framework */; };
-		00A8C0E21FEDF151007E9849 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A8C0DE1FEDF150007E9849 /* Parse.framework */; };
 		00A8C0E31FEDF151007E9849 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A8C0DF1FEDF150007E9849 /* Bolts.framework */; };
 		00A8C0E41FEDF151007E9849 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A8C0DF1FEDF150007E9849 /* Bolts.framework */; };
 		00A8C0E51FEDF151007E9849 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A8C0DF1FEDF150007E9849 /* Bolts.framework */; };
+		00A8C0E71FEDF3F7007E9849 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A8C0E61FEDF3F7007E9849 /* Parse.framework */; };
+		00A8C0E81FEDF3F7007E9849 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A8C0E61FEDF3F7007E9849 /* Parse.framework */; };
+		00A8C0E91FEDF3F7007E9849 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A8C0E61FEDF3F7007E9849 /* Parse.framework */; };
 		00CD47D11FEDE1F900308B90 /* Dentist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD47D01FEDE1F900308B90 /* Dentist.swift */; };
 		00CD47D21FEDE1F900308B90 /* Dentist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD47D01FEDE1F900308B90 /* Dentist.swift */; };
 		00CD47D31FEDE1F900308B90 /* Dentist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD47D01FEDE1F900308B90 /* Dentist.swift */; };
@@ -60,8 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00A8C0DE1FEDF150007E9849 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../Parse-iOS 오후 5.58.58/Parse.framework"; sourceTree = "<group>"; };
 		00A8C0DF1FEDF150007E9849 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		00A8C0E61FEDF3F7007E9849 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		00CD47D01FEDE1F900308B90 /* Dentist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dentist.swift; sourceTree = "<group>"; };
 		00CD47D41FEDE22E00308B90 /* Dentist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dentist.storyboard; sourceTree = "<group>"; };
 		F90380031FDD030B00247CCE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -105,10 +105,10 @@
 				F91961761FDBD5E2003DFAB6 /* StoreKit.framework in Frameworks */,
 				F91961741FDBD5DC003DFAB6 /* Security.framework in Frameworks */,
 				F91961721FDBD5D4003DFAB6 /* QuartzCore.framework in Frameworks */,
-				00A8C0E01FEDF151007E9849 /* Parse.framework in Frameworks */,
 				F91961701FDBD5C8003DFAB6 /* CoreLocation.framework in Frameworks */,
 				F919616E1FDBD5C1003DFAB6 /* CoreGraphics.framework in Frameworks */,
 				F919616C1FDBD5A4003DFAB6 /* CFNetwork.framework in Frameworks */,
+				00A8C0E71FEDF3F7007E9849 /* Parse.framework in Frameworks */,
 				F919616A1FDBD59F003DFAB6 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A8C0E11FEDF151007E9849 /* Parse.framework in Frameworks */,
+				00A8C0E81FEDF3F7007E9849 /* Parse.framework in Frameworks */,
 				00A8C0E41FEDF151007E9849 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A8C0E21FEDF151007E9849 /* Parse.framework in Frameworks */,
+				00A8C0E91FEDF3F7007E9849 /* Parse.framework in Frameworks */,
 				00A8C0E51FEDF151007E9849 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,8 +205,8 @@
 			children = (
 				F919617B1FDBD601003DFAB6 /* libsqlite3.tbd */,
 				F91961791FDBD5F7003DFAB6 /* libz.tbd */,
+				00A8C0E61FEDF3F7007E9849 /* Parse.framework */,
 				00A8C0DF1FEDF150007E9849 /* Bolts.framework */,
-				00A8C0DE1FEDF150007E9849 /* Parse.framework */,
 				F91961771FDBD5EA003DFAB6 /* SystemConfiguration.framework */,
 				F91961751FDBD5E2003DFAB6 /* StoreKit.framework */,
 				F91961731FDBD5DC003DFAB6 /* Security.framework */,
