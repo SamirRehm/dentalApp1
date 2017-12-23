@@ -94,6 +94,7 @@ class ScheduleAnAppointment: UIViewController {
         user["AppointmentType"] = apptType
         user["AppointmentDate"] = apptDate
         user["AdditionalComments"] = addComment
+        user["Confirmation"] = false
 
        user.saveInBackground()
         

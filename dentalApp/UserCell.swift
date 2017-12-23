@@ -15,8 +15,8 @@ class UserCell: PFTableViewCell {
     
     @IBOutlet weak var nameOfPatient: UILabel!
     @IBOutlet weak var apptDate: UILabel!
-    @IBOutlet weak var stack: UIStackView!
+    @IBOutlet weak var apptType: UILabel!
+    @IBOutlet weak var additionalComment: UILabel!
     
-    
-    
+
 }
