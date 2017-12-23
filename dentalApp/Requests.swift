@@ -8,46 +8,45 @@
 
 import UIKit
 import Parse
+import ParseUI
 
-class Requests: UITableViewController {
-    var list = [PFObject]()
-    var list2 = ["apple", "orange"]
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let query = PFUser.query()
-         query?.whereKey("Confirmation", equalTo: false)
-         query?.selectKeys(["firstname", "lastname", "AppointmentDate", "AppointmentType", "AdditionalComments"])
-         query?.findObjectsInBackground {
-         (objects:[PFObject]?, error:Error?) -> Void in
-         if error == nil {
-         // Do something with the found objects
-         if let objects = objects {
-         for object in objects {
-         self.list.append(object)
-         print(object["lastname"])
-         }
-         }
-         } else {
-         // Log details of the failure
-         print("Error")
-         }
-         }
-        print(list.count)
-        return(2)
-    }
+class Requests: PFQueryTableViewController {
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = list[indexPath.row] as? String
-        return(cell)
+    override func queryForTable() -> PFQuery<PFObject> {
+        let query: PFQuery = PFUser.query()!
+        query.order(byAscending: "createdAt")
+        query.whereKey("Confirmation", equalTo: false)
+        return query
     }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
- 
     }
-
-
-
-
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, object: PFObject?) -> PFTableViewCell? {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! UserCell
+        let firstname = object?.object(forKey: "firstname") as? String
+        let lastname = object?.object(forKey: "lastname") as? String
+        let date = object?.object(forKey: "AppointmentDate") as? String
+        cell.nameOfPatient.text = firstname! + " " + lastname!
+        cell.apptDate.text = date!
+        
+        
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row + 1 > (self.objects?.count)! {
+            return 44
+        }
+        
+        let height = super.tableView(tableView, heightForRowAt: indexPath)
+        return height
+        
+    }
+    
+    
 }

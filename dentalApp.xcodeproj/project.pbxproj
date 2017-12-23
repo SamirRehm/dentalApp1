@@ -13,6 +13,8 @@
 		00A8C0E71FEDF3F7007E9849 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A8C0E61FEDF3F7007E9849 /* Parse.framework */; };
 		00A8C0E81FEDF3F7007E9849 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A8C0E61FEDF3F7007E9849 /* Parse.framework */; };
 		00A8C0E91FEDF3F7007E9849 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A8C0E61FEDF3F7007E9849 /* Parse.framework */; };
+		00A8C0EF1FEE91CB007E9849 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A8C0EE1FEE91CB007E9849 /* UserCell.swift */; };
+		00A8C0F11FEE9A1C007E9849 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A8C0F01FEE9A1B007E9849 /* ParseUI.framework */; };
 		00CD47D11FEDE1F900308B90 /* Dentist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD47D01FEDE1F900308B90 /* Dentist.swift */; };
 		00CD47D21FEDE1F900308B90 /* Dentist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD47D01FEDE1F900308B90 /* Dentist.swift */; };
 		00CD47D31FEDE1F900308B90 /* Dentist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD47D01FEDE1F900308B90 /* Dentist.swift */; };
@@ -64,6 +66,8 @@
 /* Begin PBXFileReference section */
 		00A8C0DF1FEDF150007E9849 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		00A8C0E61FEDF3F7007E9849 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		00A8C0EE1FEE91CB007E9849 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		00A8C0F01FEE9A1B007E9849 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		00CD47D01FEDE1F900308B90 /* Dentist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dentist.swift; sourceTree = "<group>"; };
 		00CD47D41FEDE22E00308B90 /* Dentist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dentist.storyboard; sourceTree = "<group>"; };
 		DEBE4EDA1FEE09D900E991FE /* ScheduleAnAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleAnAppointment.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A8C0F11FEE9A1C007E9849 /* ParseUI.framework in Frameworks */,
 				F919617C1FDBD602003DFAB6 /* libsqlite3.tbd in Frameworks */,
 				F919617A1FDBD5F7003DFAB6 /* libz.tbd in Frameworks */,
 				F91961781FDBD5EA003DFAB6 /* SystemConfiguration.framework in Frameworks */,
@@ -181,6 +186,7 @@
 				00CD47D41FEDE22E00308B90 /* Dentist.storyboard */,
 				00CD47D01FEDE1F900308B90 /* Dentist.swift */,
 				DEBE4EDE1FEE232E00E991FE /* Requests.swift */,
+				00A8C0EE1FEE91CB007E9849 /* UserCell.swift */,
 				F91961411FDBCA66003DFAB6 /* Assets.xcassets */,
 				F91961431FDBCA66003DFAB6 /* LaunchScreen.storyboard */,
 				F91961461FDBCA66003DFAB6 /* Info.plist */,
@@ -211,6 +217,7 @@
 			children = (
 				F919617B1FDBD601003DFAB6 /* libsqlite3.tbd */,
 				F91961791FDBD5F7003DFAB6 /* libz.tbd */,
+				00A8C0F01FEE9A1B007E9849 /* ParseUI.framework */,
 				00A8C0E61FEDF3F7007E9849 /* Parse.framework */,
 				00A8C0DF1FEDF150007E9849 /* Bolts.framework */,
 				F91961771FDBD5EA003DFAB6 /* SystemConfiguration.framework */,
@@ -370,6 +377,7 @@
 				F90380041FDD030B00247CCE /* Home.swift in Sources */,
 				F903800A1FDD0D0500247CCE /* DayWeatherModel.swift in Sources */,
 				F919613B1FDBCA66003DFAB6 /* AppDelegate.swift in Sources */,
+				00A8C0EF1FEE91CB007E9849 /* UserCell.swift in Sources */,
 				00CD47D11FEDE1F900308B90 /* Dentist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +548,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PY9977T7R3;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -560,6 +569,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PY9977T7R3;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

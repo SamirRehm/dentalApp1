@@ -132,13 +132,17 @@ class ViewController: UIViewController {
     
     func autoLogin() {
         
+        var user = PFUser.current()
+        
         if PFUser.current() == nil {
             print("")
             
+        } else if user!.username == "6049979710" {
+            let vc = UIStoryboard(name: "Dentist", bundle: nil).instantiateViewController(withIdentifier: "navi2")
+            self.present(vc, animated: true, completion: nil)
         } else {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "navi")
                 self.present(vc!, animated: true, completion: nil)
-
         }
         
     }
