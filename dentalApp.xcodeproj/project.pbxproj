@@ -19,6 +19,8 @@
 		00CD47D51FEDE22E00308B90 /* Dentist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CD47D41FEDE22E00308B90 /* Dentist.storyboard */; };
 		00CD47D61FEDE22E00308B90 /* Dentist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CD47D41FEDE22E00308B90 /* Dentist.storyboard */; };
 		00CD47D71FEDE22E00308B90 /* Dentist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CD47D41FEDE22E00308B90 /* Dentist.storyboard */; };
+		DEBE4EDB1FEE09D900E991FE /* ScheduleAnAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4EDA1FEE09D900E991FE /* ScheduleAnAppointment.swift */; };
+		DEBE4EDF1FEE232E00E991FE /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4EDE1FEE232E00E991FE /* Requests.swift */; };
 		F90380041FDD030B00247CCE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90380031FDD030B00247CCE /* Home.swift */; };
 		F903800A1FDD0D0500247CCE /* DayWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90380091FDD0D0500247CCE /* DayWeatherModel.swift */; };
 		F903800C1FDD0DBE00247CCE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903800B1FDD0DBE00247CCE /* Data.swift */; };
@@ -64,6 +66,8 @@
 		00A8C0E61FEDF3F7007E9849 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		00CD47D01FEDE1F900308B90 /* Dentist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dentist.swift; sourceTree = "<group>"; };
 		00CD47D41FEDE22E00308B90 /* Dentist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dentist.storyboard; sourceTree = "<group>"; };
+		DEBE4EDA1FEE09D900E991FE /* ScheduleAnAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleAnAppointment.swift; sourceTree = "<group>"; };
+		DEBE4EDE1FEE232E00E991FE /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		F90380031FDD030B00247CCE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		F90380091FDD0D0500247CCE /* DayWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherModel.swift; sourceTree = "<group>"; };
 		F903800B1FDD0DBE00247CCE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -170,11 +174,13 @@
 			children = (
 				00CD47D81FEDEF0C00308B90 /* SetUp */,
 				F919613E1FDBCA66003DFAB6 /* Main.storyboard */,
+				DEBE4EDA1FEE09D900E991FE /* ScheduleAnAppointment.swift */,
 				F919613C1FDBCA66003DFAB6 /* ViewController.swift */,
 				F91961811FDBDB89003DFAB6 /* SignUpViewController.swift */,
 				F90380031FDD030B00247CCE /* Home.swift */,
 				00CD47D41FEDE22E00308B90 /* Dentist.storyboard */,
 				00CD47D01FEDE1F900308B90 /* Dentist.swift */,
+				DEBE4EDE1FEE232E00E991FE /* Requests.swift */,
 				F91961411FDBCA66003DFAB6 /* Assets.xcassets */,
 				F91961431FDBCA66003DFAB6 /* LaunchScreen.storyboard */,
 				F91961461FDBCA66003DFAB6 /* Info.plist */,
@@ -357,7 +363,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F903800C1FDD0DBE00247CCE /* Data.swift in Sources */,
+				DEBE4EDB1FEE09D900E991FE /* ScheduleAnAppointment.swift in Sources */,
 				F91961821FDBDB89003DFAB6 /* SignUpViewController.swift in Sources */,
+				DEBE4EDF1FEE232E00E991FE /* Requests.swift in Sources */,
 				F919613D1FDBCA66003DFAB6 /* ViewController.swift in Sources */,
 				F90380041FDD030B00247CCE /* Home.swift in Sources */,
 				F903800A1FDD0D0500247CCE /* DayWeatherModel.swift in Sources */,
@@ -531,7 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QMX3CTGR3E;
+				DEVELOPMENT_TEAM = PY9977T7R3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -539,7 +547,7 @@
 				);
 				INFOPLIST_FILE = dentalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = triniti.dentalApp.;
+				PRODUCT_BUNDLE_IDENTIFIER = triniti.dentalApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -551,7 +559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QMX3CTGR3E;
+				DEVELOPMENT_TEAM = PY9977T7R3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -559,7 +567,7 @@
 				);
 				INFOPLIST_FILE = dentalApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = triniti.dentalApp.;
+				PRODUCT_BUNDLE_IDENTIFIER = triniti.dentalApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

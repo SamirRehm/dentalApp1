@@ -590,20 +590,70 @@
             </objects>
             <point key="canvasLocation" x="776.79999999999995" y="777.66116941529242"/>
         </scene>
-        <!--View Controller-->
+        <!--Schedule An Appointment-->
         <scene sceneID="VfU-3r-SuN">
             <objects>
-                <viewController id="eWA-xv-b8W" sceneMemberID="viewController">
+                <viewController id="eWA-xv-b8W" customClass="ScheduleAnAppointment" customModule="dentalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ffL-2B-R5O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ombre1" translatesAutoresizingMaskIntoConstraints="NO" id="Evq-eq-hrW">
+                                <rect key="frame" x="0.0" y="86" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Appointment Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAC-t9-poq">
+                                <rect key="frame" x="55" y="133" width="243" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Appointment Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hBD-4F-UtF">
+                                <rect key="frame" x="55" y="186" width="243" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-Qt-SHT">
+                                <rect key="frame" x="55" y="238" width="243" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYD-LI-B1M">
+                                <rect key="frame" x="138" y="491" width="61" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submit:" destination="eWA-xv-b8W" eventType="touchUpInside" id="ny5-rC-452"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QEW-w8-AfF" firstAttribute="bottom" secondItem="uYD-LI-B1M" secondAttribute="bottom" constant="146" id="1OP-yc-2eD"/>
+                            <constraint firstItem="oB2-Qt-SHT" firstAttribute="trailing" secondItem="hBD-4F-UtF" secondAttribute="trailing" id="5Ye-Bz-eaV"/>
+                            <constraint firstItem="yAC-t9-poq" firstAttribute="leading" secondItem="QEW-w8-AfF" secondAttribute="leading" constant="55" id="BXj-OB-h35"/>
+                            <constraint firstItem="yAC-t9-poq" firstAttribute="trailing" secondItem="hBD-4F-UtF" secondAttribute="trailing" id="FMA-lt-tyN"/>
+                            <constraint firstItem="hBD-4F-UtF" firstAttribute="top" secondItem="yAC-t9-poq" secondAttribute="bottom" constant="23" id="K79-Qp-0P7"/>
+                            <constraint firstItem="uYD-LI-B1M" firstAttribute="leading" secondItem="QEW-w8-AfF" secondAttribute="leading" constant="138" id="KFu-aH-hQs"/>
+                            <constraint firstItem="QEW-w8-AfF" firstAttribute="trailing" secondItem="uYD-LI-B1M" secondAttribute="trailing" constant="176" id="L9g-Xp-q9r"/>
+                            <constraint firstItem="oB2-Qt-SHT" firstAttribute="top" secondItem="hBD-4F-UtF" secondAttribute="bottom" constant="22" id="O1B-p5-Pzd"/>
+                            <constraint firstItem="oB2-Qt-SHT" firstAttribute="leading" secondItem="hBD-4F-UtF" secondAttribute="leading" id="WAU-E2-Rry"/>
+                            <constraint firstItem="yAC-t9-poq" firstAttribute="leading" secondItem="hBD-4F-UtF" secondAttribute="leading" id="kOQ-W4-6Zr"/>
+                            <constraint firstItem="yAC-t9-poq" firstAttribute="top" secondItem="QEW-w8-AfF" secondAttribute="top" constant="69" id="nVD-ES-HO0"/>
+                            <constraint firstItem="QEW-w8-AfF" firstAttribute="trailing" secondItem="yAC-t9-poq" secondAttribute="trailing" constant="77" id="zs3-od-qhv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QEW-w8-AfF"/>
                     </view>
+                    <connections>
+                        <outlet property="additionalComment" destination="oB2-Qt-SHT" id="DrC-cN-XLN"/>
+                        <outlet property="appointmentDate" destination="hBD-4F-UtF" id="9TG-4h-oUJ"/>
+                        <outlet property="appointmentType" destination="yAC-t9-poq" id="Wj0-FQ-l1k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAE-fc-jA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1465" y="778"/>
+            <point key="canvasLocation" x="1464.8" y="777.66116941529242"/>
         </scene>
         <!--navi-->
         <scene sceneID="G1L-yi-PdS">

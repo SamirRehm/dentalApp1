@@ -11,7 +11,7 @@ import Parse
 import Foundation
 
 class Dentist: UIViewController {
-    
+
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var dayView: UIView!
     @IBOutlet weak var weatherView: UIView!
@@ -24,7 +24,6 @@ class Dentist: UIViewController {
     @IBOutlet weak var weatherImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
-    
     
     @IBOutlet weak var logout: UIButton!
     @IBOutlet weak var welcome: UILabel!
@@ -39,31 +38,17 @@ class Dentist: UIViewController {
     var imgURL: String!
     var x = 0
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //autoLogin()
         displayWhitehorseWeather()
         setUpAnimatedControls()
         setUpButtons()
         
-        let query = PFUser.query()
-        //query?.whereKey("firstname", notEqualTo: "")
-        query?.selectKeys(["firstname"])
-        query?.findObjectsInBackground {
-            (objects:[PFObject]?, error:Error?) -> Void in
-            if error == nil {
-                // Do something with the found objects
-                if let objects = objects {
-                    for object in objects {
-                        print(object["firstname"])
-                    }
-                }
-            } else {
-                // Log details of the failure
-                print("Error")
-            }
-        }
-        
     }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
@@ -81,6 +66,18 @@ class Dentist: UIViewController {
         animateView()
     }
     
+    func autoLogin() {
+        
+        if PFUser.current() == nil {
+            print("")
+            
+        } else {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "navi2")
+            self.present(vc!, animated: true, completion: nil)
+            
+        }
+        
+    }
     
     func setUpAnimatedControls() {
         
