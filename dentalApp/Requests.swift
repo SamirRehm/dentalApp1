@@ -23,7 +23,7 @@ class Requests: PFQueryTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.rowHeight = 120
+        self.tableView.rowHeight = 150
         
     }
     
@@ -37,11 +37,11 @@ class Requests: PFQueryTableViewController {
         let additionalComment = object?.object(forKey: "AdditionalComments") as? String
         let appointmentType = object?.object(forKey: "AppointmentType") as? String
         
-        cell.additionalComment.lineBreakMode = .byWordWrapping
-        cell.additionalComment.numberOfLines = 0
+        cell.additionalComment?.lineBreakMode = .byWordWrapping
+        cell.additionalComment?.numberOfLines = 0
         
-        cell.nameOfPatient.text = firstname! + " " + lastname!
-        cell.apptDate.text = date!
+        if firstname != nil && lastname != nil {cell.nameOfPatient.text = firstname! + " " + lastname!}
+        if date != nil {cell.apptDate.text = date!}
         if additionalComment != nil {cell.additionalComment.text = additionalComment!}
         if appointmentType != nil {cell.apptType.text = appointmentType!}
         
